@@ -165,7 +165,7 @@ extension DiskStorage {
    - Parameter key: Unique key to identify the object in the cache
    - Returns: A md5 string
    */
-  func makeFileName(for key: Key) -> String {
+  public func makeFileName(for key: Key) -> String {
     if let key = key as? String {
         let fileExtension = (key as NSString).pathExtension
         let fileName = MD5(key)
